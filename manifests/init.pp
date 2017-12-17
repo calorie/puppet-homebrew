@@ -19,7 +19,7 @@ class homebrew(
   include boxen::config
   include homebrew::repo
 
-  file { [$installdir,
+  file { [
           "${installdir}/bin",
           "${installdir}/etc",
           "${installdir}/include",
